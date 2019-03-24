@@ -1,0 +1,96 @@
+
+<!--公司名称-->
+  <div id="name">
+      <p>欢迎登陆方鸣装饰集团官方网站!</p>
+  </div>
+<!--logo图片-->
+ <div class="logo">
+     <div><img src="fm_img/logo%20(1).png" alt=""/></div>
+     <div><img src="fm_img/top1.jpg" alt=""/></div>
+     <div><img src="fm_img/top2.jpg" alt=""/></div>
+ </div>
+<!--导航栏-->
+<div class="navas">
+    <ul>
+        <li><a href="#">网站首页</a><span>|</span></li>
+        <li><a href="#">关于我们</a><span>|</span>
+            <ul>
+                <li><a href="jtjj.html">集团简介</a></li>
+                <li><a href="ywfw.html">业务覆盖</a></li>
+                <li><a href="lxwm.html">联系我们</a></li>
+            </ul>
+        </li>
+        <li><a href="fjsj.html">非界设计</a><span>|</span></li>
+        <li><a href="#">工程案例</a><span>|</span>
+            <ul>
+                <li><a href="kfcy.html?uid=1">咖啡餐饮</a></li>
+                <li><a href="kfcy.html?uid=2">酒店办公</a></li>
+                <li><a href="kfcy.html?uid=3">电竞网咖</a></li>
+                <li><a href="kfcy.html?uid=4">休闲娱乐</a></li>
+                <li><a href="kfcy.html?uid=5">家装家居</a></li>
+                <li><a href="kfcy.html?uid=6">商超连锁</a></li>
+                <li><a href="#">其他项目</a></li>
+            </ul>
+        </li>
+        <li><a href="javascript:;">集团动态</a><span>|</span>
+            <ul>
+                <li><a href="gsdt.html">公司动态</a></li>
+                <li><a href="jtdt.html">行业动态</a></li>
+            </ul>
+        </li>
+        <li><a href="lxwm.html">联系我们</a></li>
+    </ul>
+</div>
+<!--轮播图-->
+<div class="carousel">
+    <div class="carousel-inner" id="list" style='left:0;'>
+       <a href="#" target="_blank"><img src="fm_img/1s.jpg" alt=""></a> 
+        <a href="#" target="_blank"><img src="fm_img/1s.jpg" alt=""></a> 
+    </div>
+    <ul class="D">
+        <li></li>
+    </ul>
+    <a href="javascript:;" id="prev" class="left arrow"></a>
+    <a href="javascript:;" id="next" class="right arrow"></a>
+</div>
+
+<script>
+       //查找触发事件元素图片和左右箭头
+     var list=document.getElementById('list');
+     var prev=document.getElementById('prev');
+     console.log(prev)
+     var next=document.getElementById('next');
+  //创建一个公共函数
+     function animate(offset) {
+         //获取的是style.left，是相对左边获取距离，所以第一张图后style.left都为负值，
+         //且style.left获取的是字符串，需要用parseInt()取整转化为数字。
+         var newLeft=parseInt(list.style.left) + offset;
+         list.style.left=newLeft+'px';
+         if(newLeft<-1600){
+            list.style.left=0+'px';
+       }
+     }
+     //左边箭头函数
+     prev.onclick=function() {             
+         animate(-1579);
+     }
+     //右边箭头函数
+     next.onclick=function() {  
+         animate(-1579);
+     }
+
+ function task(){
+    prev.onclick();
+}
+var n=setInterval(task,3000)
+//查找父元素
+var carousel=document.querySelector("div.carousel");
+//当鼠标进入轮播图停止轮播
+carousel.onmouseover=function(){
+    clearInterval(n)
+}
+//当鼠标移除轮播就继续开始轮播
+carousel.onmouseout=function(){
+ n=setInterval(task,3000);
+}
+</script>

@@ -1,0 +1,53 @@
+*{margin: 0;padding: 0;}
+/*所有a标签去下划线*/
+a{text-decoration: none;}
+/*动态按钮父元素*/
+.list{
+    width:100%;
+    height:50px;
+}
+/*动态按钮设置宽高*/
+.listy{width:1200px;
+    height:30px;
+    margin:10px auto;
+}
+/*两个按钮属性*/
+.listy>a{
+    width:90px;
+    height:30px;
+    display: inline-block;
+    background: #606060;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size:13px;
+    margin-left: 10px;
+}
+/*鼠标效果*/
+.listy>a:hover{
+    transition: All 0.4s ease-in-out;
+    background:firebrick;
+}
+/*介绍父元素*/
+.ntitle{
+    width:775px;
+    height:92px;
+    margin:0 auto;
+}
+/*标题介绍属性*/
+.ntitle>p:first-child{
+    width:775px;
+    height:24px;
+    font-size: 27px;
+    font-weight:700;
+    text-align: center;
+}
+/*内容属性*/
+p{
+    font-size: 14px;
+    margin-top:22px;
+    line-height:25px;
+}
+.simple{width:1200px;height:826px;margin:0 auto;}
+.simple>div:first-child>img{margin-top: 30px;}
+.simple>div>p{text-indent:35px;}

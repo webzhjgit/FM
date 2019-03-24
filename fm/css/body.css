@@ -1,0 +1,340 @@
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+/*����Ʒ��ͼƬ����*/
+.nter{
+    width:100%;
+    height:85px;
+    position: relative;
+}
+.nter>div:first-child{
+    width:100%;
+    height:36px;
+    border-bottom:1px solid #e5e5e5;
+    position:absolute;
+}
+.nter>div:last-child{
+    position:absolute;
+    left:720px;
+}
+/*����ԲȦ*/
+.circle{
+    width:1050px;
+    height:210px;
+    margin:15px auto;
+}
+.circle>ul{
+    display: flex;
+    justify-content: space-around;
+}
+.circle>ul>li{
+    width:130px;
+    height:210px;
+}
+.circle>ul>li>p{
+    font-size: 14px;
+    line-height:30px;
+    margin-top:10px;
+    text-align:center;
+}
+.circle>ul>li>a>img{transition:all 0.8s linear;}
+.circle>ul>li>a>img:hover{transform:rotate(360deg);}
+/*�в���������Ԫ��*/
+.anli{
+    width:100%;
+    height:550px;
+    background:#f4f4f4;
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+}
+/*????????????*/
+.nav{ width:240px;
+    height:410px;
+    border:1px solid #000;
+    background:#db261f;
+    margin-top:35px;}
+.navbar{
+    width:210px;
+    height:400px;
+    margin:0 auto;
+    text-align: center;
+}
+.navbar>div{
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    color:#fff;
+    font-size: 20px;
+}
+div.navbar>div.on{
+    background: #FFF;
+    color: #e11f1f;
+}
+/*????????????*/
+.right{
+    width:955px;
+    height:475px;
+    background: #787878;
+    margin:35px 10px;
+    overflow: hidden;
+}
+.right>div.ss{
+    position: relative;
+    top:0;
+    transition: all .5s linear;
+}
+
+/*???????ul*/
+.right::before{
+    content: '';
+    display: block;
+    width:995px;
+    height:30px;
+}
+.right>div.ss>ul.host{
+    width:955px;
+    height:460px;
+    display:flex;
+    flex-wrap:wrap;
+}
+/*?????li*/
+.right>div.ss>ul.host>li{
+    width:288px;
+    height:200px;
+    margin: 0 15px 30px;
+}
+.right>div.ss>ul.host>li>p{
+    width:288px;
+    height:40px;
+    display:none;
+    line-height: 40px;
+    text-align: center;
+    background: #f00;
+}
+.right>div.ss>ul.host>li:hover{
+    background:#f00;
+}
+
+.right>div.ss>ul.host>li:hover>p{
+    display: block;
+    color:#fff;
+}
+.right>div.ss>ul.host>li>a{
+    transition: opacity .5s;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    opacity: 0.5;
+    width: 290px;
+    height: 190px;
+    color:#fff;
+}
+.host>li:first-child{
+    width:288px;
+    height:160px;
+}
+.right>div.ss>ul.host>li>a:hover{
+    opacity: 1;
+}
+.right>div.ss>ul.host>li>a>img{
+    width:288px;
+    height:160px;
+}
+/*������Ѷ��Ԫ��*/
+.Dnew{
+    width:1200px;
+    height:310px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+/*������Ѷ��߲���*/
+.Dnew #one{
+    width:570px;
+    height:305px;
+    margin-left: 20px;
+}
+/*������Ѷ����*/
+.Dnew #one>div:first-child{
+    width:570px;
+    height:40px;
+    position: relative;
+    font-weight: bold;
+}
+.Dnew #one>div:first-child>img{
+    width:60px;
+    height:20px;
+    position: absolute;
+    left:470px;
+}
+/*������Ѷ���и�Ԫ������*/
+.Dnew #one>div:nth-child(2){
+    width:570px;
+    height:130px;
+    border-bottom:2px dotted #cccccc;
+    position: relative;
+}
+/*������Ѷ���б���*/
+.Dnew #one>div:nth-child(2)>a{
+    position: absolute;
+    top:25px;
+    left:160px;
+    font-weight: bold;
+    color:#000;
+}
+/*������Ѷ���б����������Ч��*/
+.Dnew #one>div:nth-child(2)>a:hover{color: #FF8E00;}
+/*������Ѷ���н���*/
+.Dnew #one>div:nth-child(2)>p{
+    position: absolute;
+    top:60px;
+    left:160px;
+    font-size: 13px;
+}
+/*������Ѷ���¸�Ԫ��*/
+.Dnew #one>div:last-child{
+    width:570px;
+    height:130px;
+    position: relative;
+}
+/*������Ѷ������������*/
+.Dnew #one>div:last-child>p>a,.Dnew #one>div:last-child>p>span{
+    display:block;
+    font-size: 15px;
+    color:#727272;
+    margin-top:8px;
+}
+/*������Ѷ�������Ų���*/
+.Dnew #one>div:last-child>p{
+    display: flex;
+    justify-content: space-between;
+    margin-left:30px;
+}
+/*������Ѷ����ǰ����ɫԲ�㸸Ԫ��*/
+.Dnew #one>div:last-child>ul{
+    width:15px;
+    height:150px;
+    position: absolute;
+    top:-3px;
+    left:5px;
+}
+/*������Ѷ����ǰ����ɫԲ������*/
+.Dnew #one>div:last-child>ul>li{
+      width:7px;
+      height:7px;
+      border-radius: 50%;
+      background:#fd7a88;
+      margin-top: 20px;
+  }
+/*������Ѷ�ұ߸�Ԫ��*/
+.Dnew #two{
+    width:570px;
+    height:305px;
+    position: relative;
+}
+/*������Ѷ�ұ��Ϸ�*/
+.Dnew #two>div:first-child{
+    width:570px;
+    height:30px;
+    position: relative;
+    font-weight: bold;
+    border-bottom: 2px dotted #cccccc;
+}
+/*������Ѷ����СͼƬ*/
+.Dnew #two>div:first-child>img{
+    width:60px;
+    height:20px;
+    position: absolute;
+    left:470px;
+}
+/*������Ѷ���и�Ԫ��*/
+.Dnew #two>div:nth-child(2){
+    width:258px;
+    height:235px;
+    position: absolute;
+    top:50px;
+    left:10px;
+}
+/*������Ѷ���������С*/
+.Dnew #two>#p>p{font-size: 14px;}
+/*������Ѷ���б���ͽ���λ��*/
+.Dnew #two>#p>p:first-child{
+    width:270px;
+    height:60px;
+    position: absolute;
+    top:70px;
+    left:300px;
+}
+.Dnew #two>#p>p:nth-child(2){
+    width:270px;
+    height:150px;
+    position: absolute;
+    top:130px;
+    left:300px;
+}
+/*������Ѷ�Ҳ鿴���鰴ť����*/
+.Dnew #two>#p>div{
+    width:136px;
+    height:30px;
+    position: absolute;
+    top:260px;
+    left:420px;
+}
+.a{
+    width:1180px;height:110px;margin: 10px auto;}
+/*�·���������Ԫ��*/
+.new{
+    width:1250px;
+    height:700px;
+    margin: 10px auto;
+}
+/*�·�ul��Ԫ��*/
+.new>ul{
+    width:1250px;
+    height:700px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:50px;
+}
+/*������Ѷli��С*/
+.new>ul>li{
+    width:560px;
+    height:180px;
+    position: relative;
+}
+/*������Ѷ���б���a����������*/
+.new>ul>li>h3>a{
+    color:#333333;
+    position: absolute;
+    top:20px;
+    left:270px;
+    font-size: 16px;
+}
+/*������Ѷ���б���������Ч*/
+.new>ul>li>h3>a:hover{color: #FF8E00;}
+/*������ѶͼƬ������*/
+.new>ul>li>a>img{
+    width:250px;
+    height:180px;
+    transition: 1.2s;
+}
+/*������ѶͼƬ�������Ч*/
+.new>ul>li>a>img:hover{transform:scale(1.1);}
+/*���·���������*/
+.new>ul>li>p{
+    width:260px;
+    height:75px;
+    font-size: 14px;
+    position: absolute;
+    top:60px;
+    left:270px;
+}
+.b{
+    width:1180px;
+    height:110px;
+    margin: 30px auto;
+}

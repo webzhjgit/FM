@@ -1,0 +1,98 @@
+*{margin: 0;padding:0;}
+/*非凡设计整体父元素*/
+.fjsj{
+        width:1200px;
+        height:1700px;
+        margin: 20px auto;
+        position: relative;
+        display: flex;
+        justify-content: space-between;;
+}
+/*非凡设计左边*/
+.fjsja{width:360px;height:1700px;}
+/*使图不溢出*/
+.fa{overflow: hidden;}
+/*图片动态时间*/
+div.fa>img{transition: 0.3s;margin-top: 5px;}
+/*图片放大效果*/
+div.fa>img:hover{transform:scale(1.1);}
+/*第二张图片的鼠标效果*/
+.fjsja>div.fc>img{transition: 0.3s;margin-top: 5px;}
+/*图片放大效果*/
+.fjsja>div.fc>img:hover{transform:scale(1.1);}
+/*非凡设计P标签的样式属性*/
+.fjsja>div>p{
+        width:360px;
+        height:40px;
+        font-size: 20px;
+        color:#606060;
+        white-space: nowrap;
+}
+/*非凡设计右边父元素*/
+.fjsjb{
+        width:822px;
+        height:1700px;
+}
+/*非凡设计右上父元素*/
+.fjsjb>.sja{
+        width:822px;
+        height:702px;
+        display: flex;
+        justify-content: space-between;
+}
+/*非凡页面右上P标签*/
+.fjsjb>.sja>div>p{
+        width:470px;
+        height:144px;
+        font-size:19px;
+        color:#606060;
+        line-height: 50px;
+        text-indent: 25px;
+}
+/*非凡右上图片防止溢出*/
+.fjsjb>.sja>div>.fb{
+        width:470px;
+        height:290px;
+    overflow:hidden;
+        margin-top: 10px;
+}
+/*右上图片属性*/
+.fjsjb>.sja>div>.fb>img{
+        width:470px;
+        height:290px;
+        transition: 0.3s;
+}
+/*右上图片鼠标效果*/
+.fjsjb>.sja>div>.fb>img:hover{transform:scale(1.1);}
+/*非凡设计中间部分父元素*/
+.fjsjb>.sjb{
+        width:822px;
+        height:400px;
+        display: flex;
+        justify-content: space-between;
+        margin-top:70px;
+}
+/*非凡设计中间部分图片溢出*/
+.fjsjb>.sjb>.fd{
+        width:377px;
+        height:376px;
+        overflow: hidden;
+        margin-top: 20px;
+
+}
+/*图片属性*/
+.fjsjb>.sjb>.fd>img{
+        width:377px;
+        height:376px;
+        transition:0.3s;
+}
+/*图片鼠标效果*/
+.fjsjb>.sjb>.fd>img:hover{transform:scale(1.1);}
+/*右中p标签字体属性*/
+.fjsjb>.sjb>div:last-child>p{
+        width:360px;
+        height:40px;
+        font-size: 20px;
+        color:#606060;
+        white-space: nowrap;
+}
